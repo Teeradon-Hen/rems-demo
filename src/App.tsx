@@ -3,12 +3,23 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ExamplePage from './pages/ExamplePage'
+import { Switch, Route } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <ExamplePage />
+    <Switch>
+      <Route exact path="/" >
+        <ExamplePage />
+      </Route>
+      <Route path="/ele/*" >
+        <h2>ele</h2>
+      </Route>
+      <Route path="/*">
+        <h2>asdasd</h2>
+      </Route>
+    </Switch>
     // <>
     //   <div>
     //     <a href="https://vitejs.dev" target="_blank">
