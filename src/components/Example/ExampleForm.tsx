@@ -1,6 +1,6 @@
 import React from 'react'
 import { reduxForm, Field, InjectedFormProps } from 'redux-form'
-import { TextField } from '../Form/Fields'
+import { TextFieldd } from '../Form/Fields'
 import { ExampleType } from '../../dataType/Example'
 
 function ExampleFrom(props: InjectedFormProps<ExampleType, {}, string>) {
@@ -9,8 +9,8 @@ function ExampleFrom(props: InjectedFormProps<ExampleType, {}, string>) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <Field name="title" label={"title"} type={"text"} component={TextField} />
-            <Field name="content" label={"content"} type={"text"} component={TextField} />
+            <Field name="title" label={"title"} type={"text"} component={TextFieldd} />
+            <Field name="content" label={"content"} type={"text"} component={TextFieldd} />
             <button disabled={pristine || submitting} > submit</button>
             <button disabled={pristine || submitting} onClick={reset}> clear</button>
         </form>

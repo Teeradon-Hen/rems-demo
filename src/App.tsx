@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ExamplePage from './pages/ExamplePage'
 import { Switch, Route } from 'react-router-dom'
+import { TextField1 } from './components/Form/Fields'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,8 +14,8 @@ function App() {
       <Route exact path="/" >
         <ExamplePage />
       </Route>
-      <Route path="/ele/*" >
-        <h2>ele</h2>
+      <Route path="/txt" >
+        <TextField1 />
       </Route>
       <Route path="/*">
         <h2>asdasd</h2>

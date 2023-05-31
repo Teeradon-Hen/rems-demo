@@ -38,9 +38,9 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    // "noImplicitAny": false,
-    // "noImplicitReturns": false,
-    // "noImplicitThis": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
